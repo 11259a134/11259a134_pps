@@ -1,15 +1,15 @@
 (i) Find the Biggest Among 3 Numbers
-#include &lt;stdio.h&gt;
+#include<stdio.h>
 int main() {
 int a, b, c;
-printf(&quot;Enter three numbers: &quot;);
-scanf(&quot;%d %d %d&quot;, &amp;a, &amp;b, &amp;c);
-if(a &gt;= b &amp;&amp; a &gt;= c)
-printf(&quot;%d is the largest\n&quot;, a);
-else if(b &gt;= a &amp;&amp; b &gt;= c)
-printf(&quot;%d is the largest\n&quot;, b);
+printf("Enter three numbers: ");
+scanf("%d %d %d", &a, &b, &c);
+if(a >= b && a >= c)
+printf("%d is the largest\n", a);
+else if(b >= a && b>= c)
+printf("%d is the largest\n", b);
 else
-printf(&quot;%d is the largest\n&quot;, c);
+printf("%d is the largest\n", c);
 return 0;
 }
 
