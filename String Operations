@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+char s1[100], s2[100], s3[100];
+printf("Enter a string: ");
+gets(s1);
+strcpy(s2, s1);
+printf("Copied String: %s\n", s2);
+strcpy(s3, s1);
+strrev(s3);
+printf("Reversed String: %s\n", s3);
+strcat(s1, s2);
+printf("Concatenated String: %s\n", s1);
+
+return 0;
+}
+
+
+
+OUTPUT
+Enter a String: 2811
+Copied String: 2811
+Reversed String: 1182
+Concatenated String: 28112811
