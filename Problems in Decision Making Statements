@@ -1,0 +1,71 @@
+(i) Find the Biggest Among 3 Numbers
+#include &lt;stdio.h&gt;
+int main() {
+int a, b, c;
+printf(&quot;Enter three numbers: &quot;);
+scanf(&quot;%d %d %d&quot;, &amp;a, &amp;b, &amp;c);
+if(a &gt;= b &amp;&amp; a &gt;= c)
+printf(&quot;%d is the largest\n&quot;, a);
+else if(b &gt;= a &amp;&amp; b &gt;= c)
+printf(&quot;%d is the largest\n&quot;, b);
+else
+printf(&quot;%d is the largest\n&quot;, c);
+return 0;
+}
+
+
+OUTPUT:
+Enter three numbers: 4 2 8 
+8 is the largest
+
+
+
+
+(ii) Find Even or Odd
+#include &lt;stdio.h&gt;
+int main() {
+int num;
+printf(&quot;Enter a number: &quot;);
+scanf(&quot;%d&quot;, &amp;num);
+if(num % 2 == 0)
+printf(&quot;%d is Even\n&quot;, num);
+else
+printf(&quot;%d is Odd\n&quot;, num);
+return 0;
+}
+
+
+OUTPUT:
+Enter a number: 5
+5 is odd number
+
+
+
+(iii) Arithmetic Operations using Switch Case
+#include &lt;stdio.h&gt;
+int main() {
+int a, b, choice;
+printf(&quot;Enter two numbers: &quot;);
+scanf(&quot;%d %d&quot;, &amp;a, &amp;b);
+printf(&quot;1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n&quot;);
+printf(&quot;Enter your choice: &quot;);
+scanf(&quot;%d&quot;, &amp;choice);
+switch(choice) {
+case 1: printf(&quot;Sum = %d\n&quot;, a + b); break;
+case 2: printf(&quot;Difference = %d\n&quot;, a - b); break;
+case 3: printf(&quot;Product = %d\n&quot;, a * b); break;
+case 4: printf(&quot;Quotient = %.2f\n&quot;, (float)a / b); break;
+default: printf(&quot;Invalid choice\n&quot;); 
+  }
+return 0;
+}
+
+
+
+OUTPUT
+Enter two numbers: 4 7
+1.Addition  2.Subtraction
+3.Multiplication   4.Division
+Enter your choice: 1
+sum = 1
+
