@@ -1,5 +1,5 @@
 (i) Sum of Series using For Loop
-#include<stdio.>
+#include<stdio.h>
 int main() {
 int n, sum = 0;
 printf("Enter n: ");
