@@ -1,0 +1,95 @@
+(i) Sum of Series using For Loop
+#include &lt;stdio.h&gt;
+int main() {
+int n, sum = 0;
+printf(&quot;Enter n: &quot;);
+scanf(&quot;%d&quot;, &amp;n);
+for(int i = 1; i &lt;= n; i++)
+sum += i;
+printf(&quot;Sum of series = %d\n&quot;, sum);
+return 0;
+}
+
+
+OUTPUT:
+Enter n:5
+Sum of series = 15
+
+
+
+
+
+
+
+(ii) Sum of Series using While Loop
+#include &lt;stdio.h&gt;
+int main() {
+int n, i = 1, sum = 0;
+printf(&quot;Enter n: &quot;);
+scanf(&quot;%d&quot;, &amp;n);
+while(i &lt;= n) {
+sum += i;
+i++;
+}
+printf(&quot;Sum of series = %d\n&quot;, sum);
+return 0;
+}
+
+
+OUTPUT
+Enter n = 7
+sum of series = 28
+
+
+
+
+(iii) Fibonacci Series
+#include &lt;stdio.h&gt;
+int main() {
+int n, a = 0, b = 1, next;
+printf(&quot;Enter number of terms: &quot;);
+scanf(&quot;%d&quot;, &amp;n);
+printf(&quot;Fibonacci Series: &quot;);
+for(int i = 1; i &lt;= n; i++) {
+printf(&quot;%d &quot;, a);
+next = a + b;
+a = b;
+b = next;
+}
+return 0;
+}
+
+
+
+OUTPUT
+Number of terms = 5
+Fibonacci series = 01123
+
+
+
+
+(iv) Check Prime Number
+#include &lt;stdio.h&gt;
+int main() {
+int n, flag = 0;
+printf(&quot;Enter a number: &quot;);
+scanf(&quot;%d&quot;, &amp;n);
+for(int i = 2; i &lt;= n/2; i++) {
+if(n % i == 0) {
+flag = 1;
+break;
+}
+}
+if(flag == 0)
+printf(&quot;%d is a Prime number\n&quot;, n);
+else
+printf(&quot;%d is not a Prime number\n&quot;, n);
+return 0;
+}
+
+
+OUTPUT 
+Enter a Number = 11
+11 is a prime Number
+
+
