@@ -1,0 +1,17 @@
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+int main() {
+  float r=3.0, A=2.0, B=4.0, C=6.0, S=5.0, x=2.0, y=3.0, z=4.0;
+  printf(&quot;πr² = %.2f\n&quot;, M_PI*r*r);
+  printf(&quot;(A+B+(2C/3A)+A²+2B) = %.2f\n&quot;, A+B+(2*C/(3*A))+pow(A,2)+2*B);
+  printf(&quot;√S(S-A)(S-B)(S-C) = %.2f\n&quot;, sqrt(S*(S-A)*(S-B)*(S-C)));
+  printf(&quot;log(x³+y³+z³) = %.2f\n&quot;, log(pow(x,3)+pow(y,3)+pow(z,3)));
+  return 0;
+}
+
+OUTPUT :
+Area r^2 = 28.27
+(A+B+(2C/3A)+A^+2B)=20.00
+sqrt = DOMAIN ERROR
+S(S-A)(S-B)S-C)=+NAN
+log(x^3+y^3+Z^3)=4.60
