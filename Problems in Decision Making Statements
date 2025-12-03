@@ -22,15 +22,15 @@ Enter three numbers: 4 2 8
 
 
 (ii) Find Even or Odd
-#include &lt;stdio.h&gt;
+#include<stdio.h>;
 int main() {
 int num;
-printf(&quot;Enter a number: &quot;);
-scanf(&quot;%d&quot;, &amp;num);
+printf("Enter a number: &quot;);
+scanf("%d", &num);
 if(num % 2 == 0)
-printf(&quot;%d is Even\n&quot;, num);
+printf("%d is Even\n", num);
 else
-printf(&quot;%d is Odd\n&quot;, num);
+printf("%d is Odd\n", num);
 return 0;
 }
 
@@ -42,20 +42,20 @@ Enter a number: 5
 
 
 (iii) Arithmetic Operations using Switch Case
-#include &lt;stdio.h&gt;
+#include<stdio.h>;
 int main() {
 int a, b, choice;
-printf(&quot;Enter two numbers: &quot;);
-scanf(&quot;%d %d&quot;, &amp;a, &amp;b);
-printf(&quot;1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n&quot;);
-printf(&quot;Enter your choice: &quot;);
-scanf(&quot;%d&quot;, &amp;choice);
+printf("Enter two numbers:");
+scanf("%d %d", &a, &b);
+printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n");
+printf("Enter your choice: ");
+scanf("%d",choice);
 switch(choice) {
-case 1: printf(&quot;Sum = %d\n&quot;, a + b); break;
-case 2: printf(&quot;Difference = %d\n&quot;, a - b); break;
-case 3: printf(&quot;Product = %d\n&quot;, a * b); break;
-case 4: printf(&quot;Quotient = %.2f\n&quot;, (float)a / b); break;
-default: printf(&quot;Invalid choice\n&quot;); 
+case 1: printf("Sum = %d\n", a + b); break;
+case 2: printf("Difference = %d\n", a - b); break;
+case 3: printf("Product = %d\n", a * b); break;
+case 4: printf("Quotient = %.2f\n", (float)a / b); break;
+default: printf("Invalid choice\n"); 
   }
 return 0;
 }
