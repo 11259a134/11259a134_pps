@@ -1,0 +1,30 @@
+#include &lt;stdio.h&gt;
+int main() {
+int n, key, i, found = 0;
+printf(&quot;Enter number of elements: &quot;);
+scanf(&quot;%d&quot;, &amp;n);
+int arr[n];
+printf(&quot;Enter elements: &quot;);
+for(i = 0; i &lt; n; i++)
+scanf(&quot;%d&quot;, &amp;arr[i]);
+printf(&quot;Enter element to search: &quot;);
+scanf(&quot;%d&quot;, &amp;key);
+for(i = 0; i &lt; n; i++) {
+if(arr[i] == key) {
+printf(&quot;Element found at position %d\n&quot;, i + 1);
+found = 1;
+break;
+}
+}
+if(!found)
+printf(&quot;Element not found.\n&quot;);
+return 0;
+}
+
+
+
+OUTPUT
+Enter a number of Elements = 5
+Enter Elements = 8 4 9 2 1
+Enter Elements to search = 6
+Element not found
