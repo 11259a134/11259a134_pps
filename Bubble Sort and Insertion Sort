@@ -1,0 +1,69 @@
+(a) Bubble Sort
+#include<stdio.h>
+int main() {
+int n, i, j, temp;
+printf("Enter number of elements: ");
+scanf("%d", &n);
+int a[n];
+printf("Enter elements: ");
+for(i = 0; i < n; i++)
+scanf("%d", &a[i]);
+for(i = 0; i < n-1; i++)
+for(j = 0; j < n-i-1; j++)
+if(a[j] > a[j+1]) {
+temp = a[j];
+a[j] = a[j+1];
+a[j+1] = temp;
+}
+printf("Sorted array: ");
+for(i = 0; i < n; i++)
+printf("%d", a[i]);
+return 0;
+}
+
+
+OUTPUT
+Enter Number of Elements:10
+Enter Elements:  4 1 3 7 6 5 9 0 2 8 
+Sorted Array: 0123456789
+
+
+
+
+
+
+
+(b) Insertion Sort
+#include<stdio.h>
+int main() {
+int n, i, j, key;
+printf("Enter number of elements:");
+scanf("%d", &n);
+int a[n];
+printf("Enter elements: ");
+for(i = 0; i < n; i++)
+scanf("%d", &a[i]);
+for(i = 1; i < n; i++) {
+key = a[i];
+j = i - 1;
+while(j >= 0 && a[j] > key) {
+a[j + 1] = a[j];
+j--;
+}
+a[j + 1] = key;
+}
+printf("Sorted array: ");
+for(i = 0; i < n; i++)
+printf("%d", a[i]);
+return 0;
+}
+
+
+OUTPUT
+Enter Number of Elements:5 
+Enter Elements:1 4 3 2 
+Sorted Array:12344783
+
+
+
+
